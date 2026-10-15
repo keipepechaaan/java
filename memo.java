@@ -107,6 +107,25 @@ class memo{
                     }
                 }
 
+        // 3項演算子
+            int x1 = 10;
+            int y1 = 20;
+            // if(x1 > y1){max = x1;}else{max = y1;} と同じ意味
+            int max = (x1 > y1) ? x1 : y1; // x1 > y1 が true なら x1 を、false なら y1 を max に代入
+            System.out.println(max);
+
+        // true 文の省略 ①
+            /* if(i > 0){
+            return true;
+            }
+            else{
+                return false;
+            } */
+            System.out.println("上の式と return (i > 0); は同じ");
+
+        // true 文の省略 ②
+            /* if(fun(i) == true){命令文} */
+            System.out.println("上の式と if(fun(i)){命令文} は同じ");
 
         //乱数
          // 1 Math.random() を使う
